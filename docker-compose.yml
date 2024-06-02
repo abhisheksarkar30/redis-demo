@@ -1,0 +1,16 @@
+services:
+  redis-demo:
+    build: .
+    image: abhisheksarkar30/redis-demo
+    environment:
+      - spring.data.redis.host=redis
+    ports:
+      - "8080:8080"
+
+  redis:
+    image: redis
+
+  redis-insight:
+    image: redis/redisinsight
+    ports:
+      - "5540:5540"
