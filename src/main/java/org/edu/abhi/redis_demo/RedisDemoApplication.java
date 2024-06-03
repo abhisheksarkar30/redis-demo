@@ -9,7 +9,7 @@ import org.springframework.data.redis.cache.RedisCacheConfiguration;
 
 import java.time.Duration;
 
-@EnableCaching
+@EnableCaching // Required to work with @Cacheable
 @SpringBootApplication
 public class RedisDemoApplication {
 
